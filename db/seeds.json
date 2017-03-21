@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Chen's Kitchen",
+    "description": "Best Chinese Food",
+    "link": "http://www.chenskitchenherndon.com/",
+    "reviewLink": "https://www.yelp.com/biz/chens-kitchen-herndon"
+  },
+  {
+    "name": "Thunder Burger & Bar",
+    "description": "Rock-themed burger spot offering a variety of draft beers & customizable burgers in a glam setting.",
+    "link": "http://www.thunderburger.com/index1.html",
+    "reviewLink": "https://www.yelp.com/biz/thunder-burger-and-bar-washington"
+  },
+  {
+    "name": "Kung Fu Tea",
+    "description": "The bubble tea cafe distinguishes itself by having a system where drinkers can customize their order by sweetness, iciness, toppings, and other variables, using Asian teas as a base (rather than a commercial powder like some bubble tea purveyors do). They also offer some unique flavors like an Oreo milk tea.",
+    "link": "http://www.kfteausa.com/",
+    "reviewlink": "https://www.yelp.com/biz/kft-annandale?osq=Kung+Fu+Tea"
+  }
+]

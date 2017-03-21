@@ -1,0 +1,11 @@
+<h2>Mean Restaurants</h2>
+
+<h3 data-ng-repeat="restaurant in vm.restaurants">
+  <a data-ui-sref="show({name: restaurant.name})"> {{restaurant.name}}</a>
+</h2>
+
+<!-- <form ng-submit="vm.create()">
+  <input type="text" ng-model="vm.newCandidate.name" placeholder="Name">
+  <input type="number" ng-model="vm.newCandidate.year" placeholder="Year">
+  <button type="submit">Run for Office</button>
+</form> -->
