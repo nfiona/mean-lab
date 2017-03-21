@@ -34,6 +34,24 @@ app.get("/api/restaurants/:name", function(req, res){
   });
 });
 
+app.post("/api/restaurants", function(req,res) {
+  Restaurant.create(req.body).then(function(restaurant){
+    res.json(restaurant);
+  })
+})
+
+app.delete("/api/restaurants/:name", function(req,res) {
+  Restaurant.findOneAndRemove({name: req.params.name}).then(function() {
+    res.json({success: true});
+  })
+})
+
+app.put("/api/restaurants/:name", function(req, res){
+  Restaurant.findOneAndUpdate({name: req.params.name}, req.body, {new: true}).then(function(restaurant){
+    res.json(restaurant);
+  });
+});
+
 app.listen(app.get("port"), function(){
   console.log("It's aliiive!");
 });

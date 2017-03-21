@@ -4,8 +4,10 @@
   <a data-ui-sref="show({name: restaurant.name})"> {{restaurant.name}}</a>
 </h2>
 
-<!-- <form ng-submit="vm.create()">
-  <input type="text" ng-model="vm.newCandidate.name" placeholder="Name">
-  <input type="number" ng-model="vm.newCandidate.year" placeholder="Year">
-  <button type="submit">Run for Office</button>
-</form> -->
+<form ng-submit="vm.create()">
+<input type="text" ng-model="vm.newRestaurant.name" placeholder="Name">
+<input type="text" ng-model="vm.newRestaurant.description" placeholder="Description">
+<input type="text" ng-model="vm.newRestaurant.link" placeholder="Website Link">
+<input type="text" ng-model="vm.newRestaurant.reviewLink" placeholder="Reviews Link">
+<button type="submit">Add New Restaurant</button>
+</form>

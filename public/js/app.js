@@ -48,8 +48,23 @@ function Restaurant ($resource) {
 
 function indexController ($state, Restaurant) {
   this.restaurants = Restaurant.query()
+  this.newRestaurant = new Restaurant()
+  this.create = function() {
+    this.newRestaurant.$save().then(function(restaurant) {
+      $state.go("show", {name: restaurant.name})
+    })
+  }
 }
 
 function showController ($state, $stateParams, Restaurant) {
   this.restaurant = Restaurant.get({name: $stateParams.name})
+  this.update = function() {
+    this.restaurant.$update({name: $stateParams.name})
+    $state.go("index")
+  }
+  this.destroy = function() {
+    this.restaurant.$delete({name: $stateParams.name}).then(function() {
+      $state.go("index")
+    })
+  }
 }
